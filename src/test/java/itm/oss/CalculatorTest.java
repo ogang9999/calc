@@ -21,5 +21,10 @@ import org.junit.jupiter.api.Test;
         void prime() {
             assertTrue(calc.isPrime(2), "2 is prime number");
         }
+        @Test 
+        @DisplayName("Test for negative prime")
+        void primeNegative() {
+            assertFalse(calc.isPrime(-4), "-4 is not prime");
+        }
 
     }
